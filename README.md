@@ -1,131 +1,40 @@
-# Sony A7III Documentary LUTs
+<img src="./assets/repository-cover.svg" width="100%" alt="Sony S-Log LUTs — Base de color documental para Sony A7III">
 
-LUTs de workflow para Sony A7III (S-Log2 / S-Log3) diseñados para monitoreo en rodaje y base de color en postproducción.
+[← Perfil principal](https://github.com/guzmandavila) &nbsp; / &nbsp; [Portafolio ES](https://github.com/guzmandavila/portfolio/blob/main/PORTFOLIO_ES.md) &nbsp; / &nbsp; [Portfolio EN](https://github.com/guzmandavila/portfolio/blob/main/PORTFOLIO_EN.md)
 
-Inspirados en una respuesta cromática natural cercana a emulsiones Fuji y Kodak, pensados para proyectos documentales y producción audiovisual de ritmo ágil.
+### [Descargar LUT .cube ↓](https://raw.githubusercontent.com/guzmandavila/sony-slog-luts/main/A7III_SLOG3_REC709_DOC_BASE.cube)
 
-Estos LUTs **no están diseñados como look final**, sino como un punto de partida técnico para el etalonaje.
+Recurso de color para el flujo documental con Sony A7III. El archivo disponible es una base de trabajo para material S-Log3 y salida Rec.709; se utiliza como punto de partida para el etalonaje, con ajustes de exposición, balance y look según cada proyecto.
 
----
+## Archivo disponible
 
-## Propósito
+| Archivo | Formato | Tamaño de la malla |
+| :--- | :--- | :--- |
+| [A7III_SLOG3_REC709_DOC_BASE.cube](./A7III_SLOG3_REC709_DOC_BASE.cube) | LUT 3D · .cube | 33 × 33 × 33 |
 
-Estos LUTs fueron creados como herramientas de trabajo para:
+El repositorio contiene actualmente este único LUT. Las variantes S-Log2 mencionadas en versiones anteriores de la documentación no están publicadas aquí.
 
-• Monitoreo durante grabación  
-• Conversión inicial a Rec709  
-• Acelerar workflows documentales  
-• Mantener tonos de piel naturales  
-• Reducir tiempo de corrección base  
+## Uso en postproducción
 
----
+1. Descarga el archivo `.cube` e impórtalo en la biblioteca de LUTs de DaVinci Resolve.
+2. Actualiza la lista de LUTs y comprueba el perfil de entrada de tu material.
+3. Utilízalo como base técnica; revisa exposición y balance, y realiza después los ajustes de contraste y look.
 
-## Cámara y perfiles soportados
+**Flujo de referencia**  
+Material S-Log3 → LUT base → Balance primario → Contraste → Look final
 
-Camera:
-Sony A7III
+## Criterio de color
 
-Picture Profiles:
-S-Log2  
-S-Log3  
-SGamut3.cine  
+Respuesta cromática natural, tonos de piel neutros, saturación controlada y transiciones suaves en altas luces. Las referencias de intención cromática son Fuji y Kodak.
 
----
+Cada plano requiere revisión según iluminación, exposición y dirección de fotografía. El LUT no sustituye el proceso de color grading.
 
-## Filosofía de color
+## Uso y autoría
 
-El objetivo no es crear un "look cinematográfico" artificial, sino establecer una base de color equilibrada y orgánica que permita construir el look final en el proceso de color grading.
+Desarrollado a partir de trabajo original de color. Uso libre en proyectos personales y profesionales; no incluye LUTs de terceros.
 
-Referencias de intención cromática:
-
-• Respuesta natural tipo Fuji  
-• Contraste suave inspirado en Kodak  
-• Tonos de piel neutros  
-• Saturación controlada  
-• Roll-off suave en altas luces  
+**Relacionado:** [portafolio de producción y postproducción](https://github.com/guzmandavila/portfolio).
 
 ---
 
-## Uso recomendado
-
-Estos LUTs funcionan mejor cuando:
-
-• La exposición está entre +1 y +1.7 sobre gris medio en SLog3  
-• Se mantiene ISO base nativo  
-• Se trabaja con balance de blancos correcto en cámara  
-• Se usan como primer nodo técnico en Resolve  
-
----
-
-## Workflow sugerido
-
-Ejemplo básico:
-
-Node 1 → LUT técnico  
-Node 2 → Balance primario  
-Node 3 → Contraste creativo  
-Node 4 → Look final  
-
----
-
-## Importante
-
-Estos LUTs están pensados como base técnica.
-
-Cada proyecto requiere ajustes adicionales según:
-
-• Iluminación  
-• Exposición  
-• Intención narrativa  
-• Dirección de fotografía  
-
-No reemplazan el proceso de color grading.
-
----
-
-## Instalación
-
-### DaVinci Resolve
-
-1 Descargar LUT  
-2 Colocar en:
-
-Library → LUT → Sony A7III LUTs
-
-3 Refresh LUTs
-
----
-
-## Contenido del repo
-
-LUTs/
-• slog3-to-rec709-base.cube  
-• slog3-documentary-base.cube  
-• slog2-rec709-base.cube  
-
-Examples/
-(before / after sugerido)
-
----
-
-## Licencia
-
-Estos LUTs fueron creados a partir de trabajo original de color.
-
-Uso libre para proyectos personales y profesionales.
-
-No incluye LUTs de terceros.
-
----
-
-## Autor
-
-Color workflow desarrollado a partir de experiencia en producción audiovisual, documental y postproducción.
-
----
-
-## Estado
-
-En desarrollo continuo.
-
-Se pueden añadir nuevas variaciones según proyectos futuros.
+[Perfil principal](https://github.com/guzmandavila) &nbsp; / &nbsp; [Escríbeme ↗](https://wa.me/593979864314)
